@@ -1,3 +1,5 @@
+# Newly modified comment for PR
+
 %:
 	@echo "Standard output for $@"
 
