@@ -1,8 +1,13 @@
-# Newly modified comment for PR
+BINARY = main
+CFLAGS += -W -Wall -ansi -pedantic
+LDFLAGS += $(CFLAGS)
 
-%:
-	@echo "Standard output for $@"
+all: $(BINARY)
 
-error:
-	@echo "Error output for $@" >/dev/stderr
-	@false
+%.o: %.c
+
+clean:
+	rm -f *.o *~
+
+distclean: clean
+	rm -f $(BINARY)
