@@ -4,6 +4,8 @@ LDFLAGS += $(CFLAGS)
 
 all: $(BINARY)
 
+$(warning This is a make warning)
+
 %.o: %.c
 
 clean:
